@@ -1,4 +1,15 @@
-const images = ["csgo.jpg", "gmod.jpg"];
+const images = [
+  "mcjava.jpg",
+  "mcbedrock.jpg",
+  "csgo.jpg",
+  "gmod.jpg",
+  "tf2.jpg",
+  "pavlov.jpg",
+  "rust.jpg",
+  "unturned.jpg",
+  "terraria.jpg",
+  "dayz.jpg",
+];
 let i = 0;
 
 function rotateHeroImage() {
