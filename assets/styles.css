@@ -58,11 +58,34 @@ body {
     border: none;
     border-radius: var(--border-radius);
     font-size: 1.15rem;
-    transition: 0.15s;
+    transition: background 0.15s ease;
 }
 
 .herobutton:hover {
-    background-color: var(--accent-darker);
+    background: var(--accent-darker);
+}
+
+.subherobutton {
+    padding: 0.5rem 1rem;
+    background: none;
+    box-shadow: inset 0px 0px 0px 2px var(--accent-darker);
+    border: none;
+    color: white;
+    border-radius: var(--border-radius);
+    font-size: 1.15rem;
+    transition: background 0.15s ease;
+}
+
+.subherobutton:hover {
+    background: var(--accent-darker);
+}
+
+.herobuttoncontainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 1rem;
 }
 
 .heroblur {
@@ -90,7 +113,7 @@ nav {
     height: 100%;
     width: 100%;
     backdrop-filter: blur(5px);
-    background: rgba(0,0,0,0.5);
+    background: rgba(30,30,30,0.5);
 }
 
 .nav_content {
@@ -135,6 +158,154 @@ nav {
     color: white;
     text-align: center;
     font-size: 3rem;
+    margin-bottom: 3rem;
+}
+
+.simplesection_features {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 6rem;
+}
+
+.featurecard {
+    width: 25vw;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+}
+
+.featurecard img {
+    filter: invert(57%) sepia(81%) saturate(429%) hue-rotate(118deg) brightness(91%) contrast(89%);
+    height: 6rem;
+}
+
+.featurecard h3 {
+    margin-top: 0.25rem;
+    font-size: 1.75rem;
+    text-align: center;
+}
+
+.featurecard p {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.servicescontainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6rem;
+    margin-top: 3rem;
+}
+
+.servicescontainer .service {
+    width: 25vw;
+    height: 15rem;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.service .contentcontainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    backdrop-filter: blur(5px);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contentcontainer .servicetitle {
+    font-size: 2rem;
+}
+
+.contentcontainer .serviceprice {
+    color: var(--accent);
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.serviceprice span {
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+.servicerust {
+    background-size: cover;
+    background: url("./serviceimg/rust.jpg");
+}
+
+.serviceminecraft {
+    background-size: cover;
+    background: url("./serviceimg/mcbedrock.jpg");
+}
+
+.servicegmod {
+    background-size: cover;
+    background: url("./serviceimg/gmod.jpg");
+}
+
+.servicessection_title {
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 6rem;
+}
+
+.moresection {
+    margin-top: 6rem;
+}
+
+.moresection .moresectiontitle {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+.moresectioncontainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.moresectioncard {
+    width: calc(25vw*4 - 24rem);
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 6rem;
+}
+
+.moresectioncard h3 {
+    color: var(--accent);
+    font-size: 2.5rem;
+}
+
+.moresectioncard p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    letter-spacing: 1.25px;
+}
+
+.moresectioncard img {
+    aspect-ratio: 16 / 11;
+    width: 25vw;
+    object-fit: cover;
+}
+
+.reverseflex {
+    flex-direction: row-reverse;
 }
 
 * {
